@@ -1,0 +1,19 @@
+//An abstract is a class that doesnt have a content on its method.
+// to achieve abstract, we must use the "abstract" keyword
+
+abstract class Vehicle{
+    abstract void run();
+}
+
+class Car extends Vehicle{
+    void run(){
+      System.out.println("Car is running smoothly.")
+    }
+public static void main(String[] args){
+
+    Vehicle car = new Car();
+    car.run();
+}
+//output -> "Car is running smoothly."
+
+}
