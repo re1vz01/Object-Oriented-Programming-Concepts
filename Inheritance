@@ -1,0 +1,21 @@
+Class Animal{ //superclass
+    String name;
+   
+   void eat(){
+    System.out.println("Eating...")
+   }
+}
+Class Dog extends Animal{ //subclass
+  
+  void bark(){
+    System.out.println("Barking...");
+    
+  }
+}
+Class InheritanceIntroduction{
+  public static void main(String[] args){
+    Dog dog = new Dog();
+    dog.bark();
+    dog.eat();
+  }
+}
