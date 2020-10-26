@@ -1,0 +1,15 @@
+class Student{
+
+    String name;
+    int age;
+    
+    public static void main(String[] args){
+    
+        Student stud = new Student(); //this is how to create an object
+    
+        System.out.println(stud.name); //accessing the variables through an object.
+        System.out.print(stud.age);
+   
+    }
+
+}
