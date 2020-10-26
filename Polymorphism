@@ -1,0 +1,42 @@
+//We can achieve Polymorphism by Method Overloading and Overriding. Also with applying multiple inheritance.
+
+class Polymorphh{
+
+ public static void main(String[] args) {
+
+        Animal a = new Animal();
+        a.eat();
+        
+        a = new Dog();
+        a.eat();
+        
+        a = new Cat();
+        a.eat();
+        
+        a = new Lion();
+        a.eat();
+
+    }
+}
+class Animal{
+    String name;
+    void eat(){
+        System.out.println("Eating..");
+    }
+
+}
+class Dog extends Animal{
+    void eat(){
+        System.out.println("Eating bread..");
+    }
+}
+class Cat extends Animal{
+    void eat(){
+        System.out.println("Eating rat..");
+    }
+}
+class Lion extends Animal{
+    void eat(){
+        System.out.println("Eating meat..");
+}
+}
